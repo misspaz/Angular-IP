@@ -1,0 +1,102 @@
+.contact-section {
+  // min-height: 100vh;
+  min-height: 700px;
+  background-image: linear-gradient(to bottom, #00040c, #213b56);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: "Perfect Dream Thin Italic";
+    font-size: 3em;
+    color: white;
+    text-align: left;
+    padding-bottom: 77px;
+  }
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__form {
+    display: flex;
+    border-radius: 13px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding-left: 35px;
+
+    &__input {
+      margin-bottom: 20px;
+      width: 450px;
+
+      &__mensaje-enviado {
+        color: white;
+        font-family: "Meltmino Light";
+        margin-top: 20px;
+      }
+
+      &__message {
+        width: 920px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+          color: #92ff9e;
+          font-family: "Meltmino Bold";
+        }
+
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+        }
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #92ff9e;
+        font-family: "Meltmino Bold";
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #92ff9e;
+        color: #141e30;
+        font-family: "Meltmino Black";
+        font-size: 15px;
+        border: none;
+        border-radius: 20px;
+        width: 100px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #00cbfc;
+        color: white;
+      }
+    }
+  }
+}

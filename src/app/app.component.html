@@ -1,0 +1,12 @@
+<button
+  *ngIf="showScrollButton"
+  class="scroll-to-top"
+  (click)="scrollToTop()"
+></button>
+
+<app-intro></app-intro>
+<app-project-card />
+<app-about />
+<app-contact />
+<app-footer />
+<router-outlet></router-outlet>

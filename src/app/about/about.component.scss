@@ -1,0 +1,104 @@
+.about-me-section {
+  // min-height: 100vh;
+  min-height: 915px;
+  background: #00040c;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 1300px;
+    height: 600px;
+
+    &__title {
+      h1 {
+        font-family: "Perfect Dream Thin Italic";
+        font-size: 3em;
+        color: white;
+        text-align: right;
+        padding-bottom: 77px;
+      }
+
+      .line {
+        border: none;
+        height: 1px;
+        position: relative;
+        bottom: 100px;
+        left: 102%;
+        width: 50px;
+        background-color: white;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+
+      &__info {
+        width: 50%;
+
+        h1 {
+          font-family: "Meltmino Bold";
+          font-size: 3em;
+          color: #92ff9e;
+          text-align: left;
+          margin-bottom: 50px;
+        }
+
+        &__first-parragraph {
+          font-family: "Meltmino Light";
+          font-size: 1.2em;
+          color: white;
+          text-align: left;
+          margin-bottom: 30px;
+          width: 90%;
+          line-height: 30px;
+          span {
+            font-family: "Meltmino Extra Bold";
+          }
+        }
+
+        p {
+          font-family: "Meltmino Light";
+          font-size: 1.2em;
+          color: white;
+          text-align: left;
+          width: 90%;
+          line-height: 30px;
+
+          span {
+            font-family: "Meltmino Extra Bold";
+          }
+        }
+      }
+
+      &__profile-image {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        .figure {
+          width: 236px;
+          position: absolute;
+          top: 229%;
+          right: 35%;
+        }
+
+        .profile-pic {
+          border-radius: 9px;
+          height: 350px;
+          position: relative;
+        }
+      }
+    }
+  }
+}
