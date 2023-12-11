@@ -21,7 +21,7 @@ footer {
       font-size: 12px;
       padding-left: 14px;
 
-      span{
+      span {
         text-decoration: underline;
       }
     }
@@ -67,6 +67,30 @@ footer {
       font-family: "Meltmino Extra Light";
       color: white;
       font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 685px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 32px;
+
+    .left-div {
+      width: 150px;
+
+      .logo {
+        height: 80px;
+      }
+    }
+
+    .right-div {
+      width: 150px;
     }
   }
 }

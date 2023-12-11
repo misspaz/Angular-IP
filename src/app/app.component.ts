@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
 
 @Component({
   selector: 'app-root',
@@ -20,30 +21,12 @@ import { FooterComponent } from './footer/footer.component';
     ContactComponent,
     FormsModule,
     FooterComponent,
+    ProjectDetailComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'ivan-perez';
-  showScrollButton = false;
-
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      this.showScrollButton = true;
-    } else {
-      this.showScrollButton = false;
-    }
-  }
-
-  scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  }
+ 
 }

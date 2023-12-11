@@ -10,6 +10,8 @@
   align-items: center;
 
   h1 {
+    display: flex;
+    align-items: center;
     font-family: "Perfect Dream Thin Italic";
     font-size: 3em;
     color: white;
@@ -20,6 +22,14 @@
   &__container {
     max-width: 1000px;
     margin: 0 auto;
+
+    .line {
+      border: none;
+      height: 1px;
+      width: 50px;
+      background-color: white;
+      margin-left: 20px;
+    }
   }
 
   &__form {
@@ -96,6 +106,64 @@
       button:hover {
         background-color: #00cbfc;
         color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .contact-section {
+    &__container {
+      h1 {
+        padding-bottom: 15px;
+      }
+      .contact-section__form {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 20px;
+
+        &__input__message {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-section {
+    min-height: 970px;
+  }
+}
+
+@media screen and (max-width: 536px) {
+  .contact-section {
+    &__container {
+      h1 {
+        padding-top: 80px;
+      }
+
+      form {
+        width: 340px;
+
+        .contact-section__form {
+          width: 100%;
+
+          &__input {
+            width: 100%;
+
+            input {
+              width: 100%;
+            }
+          }
+
+          &__message {
+            width: 100%;
+            textarea {
+              width: calc(100% - 22px);
+            }
+          }
+        }
       }
     }
   }

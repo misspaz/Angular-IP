@@ -10,16 +10,28 @@
       <img src="../../assets/IP_Imagotipo_White.png" alt="Iván Pérez logo" />
     </div>
     <div class="t-header__menu">
-      <ul>
+      <ul class="menu" *ngIf="screenSize > 603">
         <li><a (click)="scrollTo('projects')">Projects</a></li>
         <li><a (click)="scrollTo('about')">About me</a></li>
         <li><a (click)="scrollTo('contact')">Contact</a></li>
       </ul>
+      <div class="hamburger-menu" *ngIf="screenSize <= 603">
+        <button class="hamburger-btn" (click)="toggleMenu()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="menu" *ngIf="menuOpen">
+          <li><a (click)="scrollTo('projects')">Projects</a></li>
+          <li><a (click)="scrollTo('about')">About me</a></li>
+          <li><a (click)="scrollTo('contact')">Contact</a></li>
+        </ul>
+      </div>
+      <div class="h1-div">
+        <h1 class="text-serif">Hi! I’m Iván Pérez,</h1>
+        <h1 class="text-sans-serif">3D Environment Artist</h1>
+      </div>
+      <hr class="line" />
     </div>
   </div>
-  <div class="h1-div">
-    <h1 class="text-serif">Hi! I’m Iván Pérez,</h1>
-    <h1 class="text-sans-serif">3D Artist</h1>
-  </div>
-  <hr class="line" />
 </div>
