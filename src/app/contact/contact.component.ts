@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { CommonModule } from '@angular/common';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+AOS.init();
 
 @Component({
   selector: 'app-contact',
